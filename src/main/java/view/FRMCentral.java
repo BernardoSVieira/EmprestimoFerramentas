@@ -76,6 +76,11 @@ public class FRMCentral extends javax.swing.JFrame {
         jMenu1.add(jMIEmprestimoFerramenta);
 
         jMIConcluirEmprestimo.setText("Concluir Empréstimo");
+        jMIConcluirEmprestimo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMIConcluirEmprestimoActionPerformed(evt);
+            }
+        });
         jMenu1.add(jMIConcluirEmprestimo);
 
         jMIGerenciamentoFerramentas.setText("Gerenciamento de Ferramentas");
@@ -118,9 +123,19 @@ public class FRMCentral extends javax.swing.JFrame {
         jMenu2.add(jMIRelatorioFerramenta);
 
         jMIRelatorioToods.setText("Todos os Empréstimos");
+        jMIRelatorioToods.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMIRelatorioToodsActionPerformed(evt);
+            }
+        });
         jMenu2.add(jMIRelatorioToods);
 
         jMIEstatisticas.setText("Estatísticas");
+        jMIEstatisticas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMIEstatisticasActionPerformed(evt);
+            }
+        });
         jMenu2.add(jMIEstatisticas);
 
         jMenuBar1.add(jMenu2);
@@ -142,15 +157,18 @@ public class FRMCentral extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jMIEmprestimoFerramentaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMIEmprestimoFerramentaActionPerformed
-        // TODO add your handling code here:
+       FRMEmprestimoFerramenta emprestimoFerramenta = new FRMEmprestimoFerramenta();
+    emprestimoFerramenta.setVisible(true);
     }//GEN-LAST:event_jMIEmprestimoFerramentaActionPerformed
 
     private void jMIRelatorioAtivoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMIRelatorioAtivoActionPerformed
-        // TODO add your handling code here:
+        FRMRelatorioAtivo relatorioAtivo = new FRMRelatorioAtivo();
+    relatorioAtivo.setVisible(true);
     }//GEN-LAST:event_jMIRelatorioAtivoActionPerformed
 
     private void jMIRelatorioFerramentaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMIRelatorioFerramentaActionPerformed
-        // TODO add your handling code here:
+       FRMRelatorioFerramenta relatorioFerramenta = new FRMRelatorioFerramenta();
+       relatorioFerramenta.setVisible(true);
     }//GEN-LAST:event_jMIRelatorioFerramentaActionPerformed
 
     private void jMICadastroFerramentaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMICadastroFerramentaActionPerformed
@@ -177,6 +195,21 @@ public class FRMCentral extends javax.swing.JFrame {
       FRMGerenciamentoAmigos gerenciamentoAmigos = new FRMGerenciamentoAmigos ();
     gerenciamentoAmigos.setVisible(true);
     }//GEN-LAST:event_jMIGerenciamentoAmigosActionPerformed
+
+    private void jMIConcluirEmprestimoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMIConcluirEmprestimoActionPerformed
+        FRMConcluir concluirEmprestimo = new FRMConcluir();
+    concluirEmprestimo.setVisible(true);
+    }//GEN-LAST:event_jMIConcluirEmprestimoActionPerformed
+
+    private void jMIRelatorioToodsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMIRelatorioToodsActionPerformed
+        FRMRelatorioTodos relatorioTodos = new FRMRelatorioTodos();
+    relatorioTodos.setVisible(true);
+    }//GEN-LAST:event_jMIRelatorioToodsActionPerformed
+
+    private void jMIEstatisticasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMIEstatisticasActionPerformed
+      FRMEstatisticas estatisticas = new FRMEstatisticas();
+    estatisticas.setVisible(true);
+    }//GEN-LAST:event_jMIEstatisticasActionPerformed
 
     /**
      * @param args the command line arguments

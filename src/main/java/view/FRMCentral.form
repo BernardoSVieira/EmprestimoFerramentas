@@ -40,6 +40,9 @@
               <Properties>
                 <Property name="text" type="java.lang.String" value="Concluir Empr&#xe9;stimo"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMIConcluirEmprestimoActionPerformed"/>
+              </Events>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jMIGerenciamentoFerramentas">
               <Properties>
@@ -89,11 +92,17 @@
               <Properties>
                 <Property name="text" type="java.lang.String" value="Todos os Empr&#xe9;stimos"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMIRelatorioToodsActionPerformed"/>
+              </Events>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jMIEstatisticas">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Estat&#xed;sticas"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMIEstatisticasActionPerformed"/>
+              </Events>
             </MenuItem>
           </SubComponents>
         </Menu>
