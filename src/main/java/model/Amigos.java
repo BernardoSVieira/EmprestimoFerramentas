@@ -9,7 +9,5 @@ package model;
  * @author Windows
  */
 public class Amigos {
-    //String Nome, Telefone
-    //int id
     
 }
