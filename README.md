@@ -23,3 +23,14 @@ Realização de Commits:
 <descrição>: Uma descrição concisa e clara do que foi feito no commit.
 [corpo opcional]: Uma descrição mais detalhada das mudanças realizadas (opcional).
 [rodapé opcional]: Informações adicionais, como referências a problemas ou tarefas relacionadas (opcional).
+
+Documentação padrão:
+  Sempre documentar uma classe/métodos com /** [Comentário] */ para orientar o que está sendo feito;
+
+ (adicionar quando configurado)
+Banco de Dados:
+  Usuário: 
+  Senha: 
+
+
+
