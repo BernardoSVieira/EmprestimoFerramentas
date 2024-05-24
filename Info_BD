@@ -1,0 +1,91 @@
+  SERVICE: 
+  USER: root
+  PASSWORD: root
+
+CREATE TABLE IF NOT EXISTS `ferramenta`.`tb_amigo` (
+  `id_amigo` INT NOT NULL,
+  `nome` VARCHAR(45) NULL,
+  `teleforne` VARCHAR(20) NULL,
+  PRIMARY KEY (`id_amigo`))
+ENGINE = InnoDB
+
+CREATE TABLE IF NOT EXISTS `ferramenta`.`tb_emprestimo` (
+  `id_emprestimo` INT NOT NULL,
+  `id_ferramenta` INT NULL,
+  `id_amigo` INT NULL,
+  `data_emprestimo` VARCHAR(45) NULL,
+  `data_devolução_prevista` VARCHAR(45) NULL,
+  `data_devolução_real` VARCHAR(45) NULL,
+  `Status` TINYINT NULL,
+  foreign key(`id_amigo`) references `tb_amigo` (`id_amigo`),
+   foreign key(`id_ferramenta`) references `tb_ferramenta` (`id_ferramenta`),
+  PRIMARY KEY (`id_emprestimo`))
+ENGINE = InnoDB
+
+
+CREATE TABLE IF NOT EXISTS `ferramenta`.`tb_ferramenta` (
+  `id_ferramenta` INT NOT NULL,
+  `nome` VARCHAR(30) NULL,
+  `custo` FLOAT NULL,
+  `marca` VARCHAR(45) NULL,
+  PRIMARY KEY (`id_ferramenta`))
+ENGINE = InnoDB
+
+
+COMANDOS PARA A **tb_amigo**:
+  // INSERIR dados na tabela.
+  INSERT INTO `ferramenta`.`tb_amigo` (`id_amigo`, `nome`, `telefone`)
+  VALUES (1, 'João', '000000000'); 
+
+  // Buscar todos os dados da tabela.
+  SELECT * FROM tb_amigo;
+
+  // ALTERAR dados de um determinado amigo 
+  UPDATE `ferramenta`.`tb_amigo`
+  SET `nome` = 'Tiburcio', `telefone` = '04'
+  WHERE `id_amigo` = 1;
+
+  // APAGAR um determinado amigo na tabela 
+  DELETE FROM tb_amigo 
+  WHERE id_amigo = 1;
+
+COMANDOS PARA A **tb_ferramenta**:
+  //INSERIR
+  INSERT INTO `ferramenta`.`tb_ferramenta` (`id_ferramenta`, `nome`, `custo`, `marca`)
+  VALUES (1, 'Martelo', '50.00', 'Vonder'); 
+
+  //BUSCAR
+  SELECT * FROM tb_ferramenta;
+
+  //ALTERAR
+  UPDATE `ferramenta`.`tb_ferramenta`
+  SET `nome` = 'Machado', `custo` = '55.90', `marca` = 'Makita'
+  WHERE `id_ferramenta` = 1;
+
+  //DELETAR
+  DELETE FROM tb_ferramenta 
+  WHERE id_ferramenta = 1;    
+
+COMANDOS PARA A **tb_emprestimo**:
+
+  //INSERIR ( BOOLEAN: 1 = TRUE, 0 = FALSE ), no "Status" estamos utilizando valores booleanos.
+  INSERT INTO `ferramenta`.`tb_emprestimo` (`id_emprestimo`, `id_ferramenta`, `id_amigo`, `data_emprestimo`, `data_devolução_prevista`, `data_devolução_real`, `Status`)
+  VALUES (1, 1, 1, '2024-05-23', '2024-06-06', NULL, 1);
+
+  //BUSCAR
+  SELECT * FROM ferramenta.tb_emprestimo;
+
+  //ALTERAR 
+  UPDATE `ferramenta`.`tb_emprestimo`
+  SET `id_ferramenta` = 2, `id_amigo` = 3, `data_emprestimo` = '2024-05-23', `data_devolução_prevista` = '2024-06-07', `data_devolução_real` = '2024-06-10', `Status` = 0
+  WHERE `id_emprestimo` = 1;
+
+  //DELETAR
+  DELETE FROM tb_emprestimo 
+  WHERE id_emprestimo = 1;
+
+
+
+
+
+
