@@ -4,10 +4,7 @@
  */
 package model;
 
-/**
- *
- * @author Windows
- */
+//teste 
 public class Amigos {
     
 }
