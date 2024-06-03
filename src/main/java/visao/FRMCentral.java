@@ -1,13 +1,5 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
 package visao;
 
-/**
- *
- * @author Windows
- */
 public class FRMCentral extends javax.swing.JFrame {
 
     /**
@@ -177,13 +169,13 @@ public class FRMCentral extends javax.swing.JFrame {
     }//GEN-LAST:event_jMICadastroFerramentaActionPerformed
 
     private void jMenu1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu1ActionPerformed
-     FRMGerenciamentoFerramentas gerenciamentoFerramentas = new FRMGerenciamentoFerramentas();
-    gerenciamentoFerramentas.setVisible(true);
+     FRMGerenciamentoFerramenta gerenciamentoFerramenta = new FRMGerenciamentoFerramenta();
+    gerenciamentoFerramenta.setVisible(true);
     }//GEN-LAST:event_jMenu1ActionPerformed
 
     private void jMIGerenciamentoFerramentasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMIGerenciamentoFerramentasActionPerformed
-        FRMGerenciamentoFerramentas gerenciamentoFerramentas = new FRMGerenciamentoFerramentas ();
-    gerenciamentoFerramentas.setVisible(true);
+        FRMGerenciamentoFerramenta gerenciamentoFerramenta = new FRMGerenciamentoFerramenta ();
+    gerenciamentoFerramenta.setVisible(true);
     }//GEN-LAST:event_jMIGerenciamentoFerramentasActionPerformed
 
     private void jMICadastroAmigoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMICadastroAmigoActionPerformed
@@ -192,8 +184,8 @@ public class FRMCentral extends javax.swing.JFrame {
     }//GEN-LAST:event_jMICadastroAmigoActionPerformed
 
     private void jMIGerenciamentoAmigosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMIGerenciamentoAmigosActionPerformed
-      FRMGerenciamentoAmigos gerenciamentoAmigos = new FRMGerenciamentoAmigos ();
-    gerenciamentoAmigos.setVisible(true);
+      FRMGerenciamentoAmigo gerenciamentoAmigo = new FRMGerenciamentoAmigo ();
+    gerenciamentoAmigo.setVisible(true);
     }//GEN-LAST:event_jMIGerenciamentoAmigosActionPerformed
 
     private void jMIConcluirEmprestimoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMIConcluirEmprestimoActionPerformed

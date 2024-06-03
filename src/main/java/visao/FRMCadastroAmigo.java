@@ -1,13 +1,5 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
 package visao;
 
-/**
- *
- * @author Windows
- */
 public class FRMCadastroAmigo extends javax.swing.JFrame {
 
     /**
@@ -126,8 +118,8 @@ public class FRMCadastroAmigo extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jBGerenciamentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBGerenciamentoActionPerformed
-        FRMGerenciamentoFerramentas gerenciamentoFerramentas = new FRMGerenciamentoFerramentas ();
-        gerenciamentoFerramentas.setVisible(true);
+        FRMGerenciamentoFerramenta gerenciamentoFerramenta = new FRMGerenciamentoFerramenta ();
+        gerenciamentoFerramenta.setVisible(true);
     }//GEN-LAST:event_jBGerenciamentoActionPerformed
 
     private void jTFNomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTFNomeActionPerformed
