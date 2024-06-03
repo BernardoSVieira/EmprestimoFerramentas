@@ -2,18 +2,18 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package view;
+package visao;
 
 /**
  *
  * @author Windows
  */
-public class FRMRelatorioFerramenta extends javax.swing.JFrame {
+public class FRMRelatorioAtivo extends javax.swing.JFrame {
 
     /**
-     * Creates new form FRMRelatorioFerramenta
+     * Creates new form FRMRelatorioAtivo
      */
-    public FRMRelatorioFerramenta() {
+    public FRMRelatorioAtivo() {
         initComponents();
     }
 
@@ -27,7 +27,7 @@ public class FRMRelatorioFerramenta extends javax.swing.JFrame {
     private void initComponents() {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Relatório de Ferramentas");
+        setTitle("Empréstimos Ativos");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -60,20 +60,20 @@ public class FRMRelatorioFerramenta extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(FRMRelatorioFerramenta.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FRMRelatorioAtivo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(FRMRelatorioFerramenta.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FRMRelatorioAtivo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(FRMRelatorioFerramenta.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FRMRelatorioAtivo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(FRMRelatorioFerramenta.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FRMRelatorioAtivo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new FRMRelatorioFerramenta().setVisible(true);
+                new FRMRelatorioAtivo().setVisible(true);
             }
         });
     }
