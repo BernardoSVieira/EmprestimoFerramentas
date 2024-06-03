@@ -1,5 +1,5 @@
 package modelo;
 
-public class Amigos {
+public class Amigo {
     
 }

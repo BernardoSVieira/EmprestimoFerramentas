@@ -1,13 +1,13 @@
 package modelo;
 
-public class Ferramentas {
+public class Ferramenta {
    
     private int id;
     private String nome;
     private String marca;
     private double custoAquisicao;
 
-    public Ferramentas(int id, String nome, String marca, double custoAquisicao) {
+    public Ferramenta(int id, String nome, String marca, double custoAquisicao) {
         this.id = id;
         this.nome = nome;
         this.marca = marca;
