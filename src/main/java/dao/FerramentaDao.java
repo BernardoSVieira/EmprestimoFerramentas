@@ -1,4 +1,7 @@
+package dao;
+
 public class Ferramenta {
+    
     private int id;
     private String nome;
     private String marca;
