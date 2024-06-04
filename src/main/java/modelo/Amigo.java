@@ -32,6 +32,8 @@ public class Amigo {
     @Override
     public String toString() {
         return "Amigo [id=" + id + ", nome=" + nome + ", telefone="+ telefone + "]";
+   
+    
     }
 }
  
