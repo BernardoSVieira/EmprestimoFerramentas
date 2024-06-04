@@ -3,5 +3,5 @@ package modelo;
 public class Amigo {
     
     
-    oi
+    System.out.println("Que fome da desgraça");
 }
