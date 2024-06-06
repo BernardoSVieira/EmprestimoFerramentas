@@ -1,6 +1,8 @@
 package modelo;
 
 import java.util.Date;
+import java.text.SimpleDateFormat;
+import java.util.Objects;
 
 public class Emprestimo {
     private int id;
@@ -11,8 +13,14 @@ public class Emprestimo {
 
     public Emprestimo(int id, Amigo amigo, Ferramenta ferramenta, Date dataInicio, Date dataFim) {
         this.id = id;
-        this.amigo = amigo;
-        this.ferramenta = ferramenta;
+        this.amigo = Objects.requireNonNull(amigo, "Amigo não pode ser nulo");
+        this.ferramenta = Objects.requireNonNull(ferramenta, "Ferramenta não pode ser nula");
+        if (dataInicio == null || dataFim == null) {
+            throw new IllegalArgumentException("Datas não podem ser nulas");
+        }
+        if (dataFim.before(dataInicio)) {
+            throw new IllegalArgumentException("Data de fim não pode ser antes da data de início");
+        }
         this.dataInicio = dataInicio;
         this.dataFim = dataFim;
     }
@@ -30,15 +38,14 @@ public class Emprestimo {
     }
 
     public void setAmigo(Amigo amigo) {
-        this.amigo = amigo;
+        this.amigo = Objects.requireNonNull(amigo, "Amigo não pode ser nulo");
     }
-
     public Ferramenta getFerramenta() {
         return ferramenta;
     }
 
     public void setFerramenta(Ferramenta ferramenta) {
-        this.ferramenta = ferramenta;
+        this.ferramenta = Objects.requireNonNull(ferramenta, "Ferramenta não pode ser nula");
     }
 
     public Date getDataInicio() {
@@ -46,6 +53,9 @@ public class Emprestimo {
     }
 
     public void setDataInicio(Date dataInicio) {
+        if (dataInicio == null) {
+            throw new IllegalArgumentException("Data de início não pode ser nula");
+        }
         this.dataInicio = dataInicio;
     }
 
@@ -54,14 +64,19 @@ public class Emprestimo {
     }
 
     public void setDataFim(Date dataFim) {
+        if (dataFim == null) {
+            throw new IllegalArgumentException("Data de fim não pode ser nula");
+        }
+        if (dataFim.before(this.dataInicio)) {
+            throw new IllegalArgumentException("Data de fim não pode ser antes da data de início");
+        }
         this.dataFim = dataFim;
     }
-
+    
     @Override
     public String toString() {
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
         return "Emprestimo [id=" + id + ", amigo=" + amigo.getNome() + ", ferramenta=" + ferramenta.getNome() + 
-               ", dataInicio=" + dataInicio + ", dataFim=" + dataFim + "]";
+               ", dataInicio=" + sdf.format(dataInicio) + ", dataFim=" + sdf.format(dataFim) + "]";
     }
-}
-
-//teste
+} 
