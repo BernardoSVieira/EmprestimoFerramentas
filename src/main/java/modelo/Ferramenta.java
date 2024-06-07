@@ -51,6 +51,10 @@ public class Ferramenta {
     public String toString() {
         return "Ferramenta [id=" + id + ", nome=" + nome + ", marca=" + marca + ", custoAquisicao=" + custoAquisicao + "]";
     }
+
+    public float getCusto() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }
 
 //teste

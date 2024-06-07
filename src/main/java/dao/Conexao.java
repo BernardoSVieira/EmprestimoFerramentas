@@ -1,6 +1,14 @@
 package dao;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
 public class Conexao {
+
+    static Connection getConnection() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
     public Connection getConexao() {
         Connection connection = null; //instância da conexão
         try {

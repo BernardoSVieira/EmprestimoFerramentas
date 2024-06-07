@@ -1,11 +1,11 @@
-
-package main;
+package principal;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import visao.FRMCentral;
 
-public class Main {
+public class Principal {
     public static void main(String[] args) {
         String url = "jdbc:mysql://localhost:3306/EmprestimoFerramenta";
         String user = "root";
@@ -17,6 +17,10 @@ public class Main {
         } catch (SQLException e) {
             e.printStackTrace();
             System.out.println("Falha na conexão!");
+       
+         FRMCentral objetotela = new FRMCentral();
+         objetotela.setVisible(true);
         }
-    }
-}
+    } 
+}            
+   

@@ -1,54 +1,24 @@
 package dao;
 
-public class Ferramenta {
-    
-    private int id;
-    private String nome;
-    private String marca;
-    private double custoAquisicao;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import modelo.Ferramenta;
 
-    public Ferramenta(int id, String nome, String marca, double custoAquisicao) {
-        this.id = id;
-        this.nome = nome;
-        this.marca = marca;
-        this.custoAquisicao = custoAquisicao;
-    }
+public class FerramentaDao {
+    public void adicionarFerramenta(Ferramenta ferramenta) {
+        String sql = "INSERT INTO tb_ferramenta (id_ferramenta, nome, custo, marca) VALUES (?, ?, ?, ?)";
 
-    // Getters e Setters
-    public int getId() {
-        return id;
-    }
+        try (Connection conn = Conexao.getConnection();
+             PreparedStatement stmt = conn.prepareStatement(sql)) {
 
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public String getMarca() {
-        return marca;
-    }
-
-    public void setMarca(String marca) {
-        this.marca = marca;
-    }
-
-    public double getCustoAquisicao() {
-        return custoAquisicao;
-    }
-
-    public void setCustoAquisicao(double custoAquisicao) {
-        this.custoAquisicao = custoAquisicao;
-    }
-
-    @Override
-    public String toString() {
-        return "Ferramenta [id=" + id + ", nome=" + nome + ", marca=" + marca + ", custoAquisicao=" + custoAquisicao + "]";
+            stmt.setInt(1, ferramenta.getId());
+            stmt.setString(2, ferramenta.getNome());
+            stmt.setFloat(3, ferramenta.getCusto());
+            stmt.setString(4, ferramenta.getMarca());
+            stmt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 }
