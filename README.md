@@ -1,18 +1,18 @@
 ## <h1>Interface Gráfica de Empréstimo de Ferramentas</h1>
 
-## 📍 Sobre o Projeto:
+## <h3>📍Sobre o Projeto:</h3>
 <p>
   Este projeto foi estipulado para a realização de uma UC da disciplina de Programação de Soluções Computacionais da Universidade do Sul de Santa Catarina. Trata-se de uma interface gráfica que permite registrar amigos e ferramentas, bem como conceder e gerenciar empréstimos dessas ferramentas para os amigos, com todas as informações armazenadas em um banco de dados MySQL.
 </p>
 
-## ⚙️ Programas:
+## <h3>⚙️ Programas:</h3>
 <p>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" width="40" height="40"/>
   <img src="https://img.shields.io/badge/apache%20netbeans-1B6AC6?style=for-the-badge&logo=apache%20netbeans%20IDE&logoColor=white">
   <img src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white">
 </p>
 
-## 📖 História:
+## <h3>📖 História:</h3>
 <p>
   No churrasco de família, seu tio-avô, lhe pediu um software para gerenciar o empréstimo de ferramentas. Ele quer o software que rode localmente no computador dele. A ideia é ter um cadastro de ferramentas (nome, marca, custo de aquisição) e o de amigos (nome, telefone). 
 Ele gostaria de registrar os empréstimos de uma ou mais ferramentas a um determinado amigo, marcando a data que ocorreu e também a data de devolução.
@@ -20,7 +20,7 @@ Ele pediu que o software tenha um relatório de ferramentas e o quanto ele gasto
 Dias mais tarde, ele pediu para aproveitar o cadastro de amigos e criar uma agenda integrada com o google para registrar o convite dos amigos a algum evento, a integração tem como princípio compartilhar o lembrete do evento de forma a ele receber um e-mail
 </p>
 
-## ✅ Requisitos Funcionais:
+## <h3>✅ Requisitos Funcionais:</h3>
 <p>Descrevem as funcionalidades específicas que o sistema ou software deve realizar. Definindo os comportamentos do sistema, ditando o que ele deve fazer, em termos de ações, serviços ou operações.<br>
 São eles:</p>
 <p>
@@ -36,7 +36,7 @@ São eles:</p>
   - Tela de estatísticas, serve para dar um panorama geral das informações mais importantes.
 </p>
 
-## ❌ Requisitos Não Funcionais:
+## <h3>❌ Requisitos Não Funcionais:</h3>
 <p>responsáveis por definir as características e propriedades de um sistema, que não estão diretamente relacionadas às suas funcionalidades específicas, mas que são igualmente importantes para seu sucesso. Eles descrevem atributos de qualidade, restrições e condições que um sistema deve atender. são responsáveis por impactar na experiência do usuário, envolvendo desempenho, arquitetura.<br>
 São eles:</p>
 <p>
@@ -47,20 +47,20 @@ São eles:</p>
   - Facilidade para realizar atualizações e correções nos cadastros, sem grandes complicações e mantendo sempre de uma forma de fácil entendimento para o usuário final.
 </p>
 
-# 💾 Banco de Dados MYSQL:
+# <h3>💾 Banco de Dados MYSQL:</h3>
 <p>O MySQL é um sistema de gerenciamento de banco de dados, que utiliza a linguagem SQL como interface. É atualmente um dos sistemas de gerenciamento de bancos de dados mais populares da Oracle Corporation.<br>
 
 Usuário: root<br>
 Senha: root</p>
 
-## 💳 Telas Gráficas:
+## <h3>💳 Telas Gráficas:</h3>
 <p>
-  <!--<img src="" height width><br>
-  
+  <img src="./CadastroAmigo.png" height="303" width="445"><br>
+  <img src="./CadastroFerramenta.png" height=322 width="467"><br>
+  <img src="./Concluir.png" height=329 width="487"><br>
+  <img src="./GerenciamentoAmigos.png" height=307 width="409"><br>
+  <img src="./GerenciamentoFerramentas.png" height=329 width="528"><br>
 </p>
-
-
-
 
 <!--
 Requisitos Funcionais: 
