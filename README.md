@@ -29,8 +29,8 @@ Documentação padrão:
 
  (adicionar quando configurado)
 Banco de Dados:
-  Usuário: 
-  Senha: 
+  Usuário: root
+  Senha: root
 
 COMANDOS PARA A **tb_amigo**:
   // INSERIR dados na tabela.
