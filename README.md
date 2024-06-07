@@ -5,13 +5,6 @@
   Este projeto foi estipulado para a realização de uma UC da disciplina de Programação de Soluções Computacionais da Universidade do Sul de Santa Catarina. Trata-se de uma interface gráfica que permite registrar amigos e ferramentas, bem como conceder e gerenciar empréstimos dessas ferramentas para os amigos, com todas as informações armazenadas em um banco de dados MySQL.
 </p>
 
-## <h3>⚙️ Programas:</h3>
-<p>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" width="40" height="40"/>
-  <img src="https://img.shields.io/badge/apache%20netbeans-1B6AC6?style=for-the-badge&logo=apache%20netbeans%20IDE&logoColor=white">
-  <img src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white">
-</p>
-
 ## <h3>📖 História:</h3>
 <p>
   No churrasco de família, seu tio-avô, lhe pediu um software para gerenciar o empréstimo de ferramentas. Ele quer o software que rode localmente no computador dele. A ideia é ter um cadastro de ferramentas (nome, marca, custo de aquisição) e o de amigos (nome, telefone). 
@@ -45,6 +38,13 @@ São eles:</p>
   - A segurança do sistema é necessária para que nenhum usuário não autorizado altere as informações.<br>
   - O sistema deve ser capaz de suportar uma quantidade considerável de dados e sem travamentos, permanecendo responsivo e eficiente.<br>
   - Facilidade para realizar atualizações e correções nos cadastros, sem grandes complicações e mantendo sempre de uma forma de fácil entendimento para o usuário final.
+</p>
+
+## <h3>⚙️ Programas:</h3>
+<p>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" width="40" height="40"/>
+  <img src="https://img.shields.io/badge/apache%20netbeans-1B6AC6?style=for-the-badge&logo=apache%20netbeans%20IDE&logoColor=white">
+  <img src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white">
 </p>
 
 # <h3>💾 Banco de Dados MYSQL:</h3>
