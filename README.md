@@ -17,27 +17,26 @@ Dias mais tarde, ele pediu para aproveitar o cadastro de amigos e criar uma agen
 <p>Descrevem as funcionalidades específicas que o sistema ou software deve realizar. Definindo os comportamentos do sistema, ditando o que ele deve fazer, em termos de ações, serviços ou operações.<br>
 São eles:</p>
 <p>
-  - Registrar novo "amigo" com informações de nome e telefone.<br>
-  - Registrar ferramentas com detalhes como nome, marca e custo.<br>
-  - Registrar o empréstimo das ferramentas para o amigo, incluindo as datas de empréstimo e devolução.<br>
-  - Ao registrar um novo empréstimo, verificar se o amigo possui alguma ferramenta pendente de devolução, sendo capaz de alterar ou remover informações.<br>
-  - Exibir um relatório de todos os empréstimos em andamento.<br>
-  - Exibir um relatório de todos os empréstimos realizados.<br>
-  - Indicar se algum amigo nunca devolveu uma ferramenta.<br>
-  - Identificar qual amigo realizou o maior número de empréstimos.<br>
-  - O sistema deve manter uma lista completa de todas as ferramentas e o valor total gasto nelas.<br>
-  - Tela de estatísticas, serve para dar um panorama geral das informações mais importantes.
+  - RF001: Registrar novo "amigo" com informações de nome e telefone.<br>
+  - RF002: Registrar ferramentas com detalhes como nome, marca e custo.<br>
+  - RF003: Registrar o empréstimo das ferramentas para o amigo, incluindo as datas de empréstimo e devolução.<br>
+  - RF004: Ao registrar um novo empréstimo, verificar se o amigo possui alguma ferramenta pendente de devolução, sendo capaz de alterar ou remover informações.<br>
+  - RF005: Exibir um relatório de todos os empréstimos em andamento.<br>
+  - RF006: Exibir um relatório de todos os empréstimos realizados.<br>
+  - RF007: Indicar se algum amigo nunca devolveu uma ferramenta.<br>
+  - RF008: Identificar qual amigo realizou o maior número de empréstimos.<br>
+  - RF009: O sistema deve manter uma lista completa de todas as ferramentas e o valor total gasto nelas.<br>
+  - RF010: Tela de estatísticas, serve para dar um panorama geral das informações mais importantes.
 </p>
 
 ## <h3>❌ Requisitos Não Funcionais:</h3>
 <p>responsáveis por definir as características e propriedades de um sistema, que não estão diretamente relacionadas às suas funcionalidades específicas, mas que são igualmente importantes para seu sucesso. Eles descrevem atributos de qualidade, restrições e condições que um sistema deve atender. são responsáveis por impactar na experiência do usuário, envolvendo desempenho, arquitetura.<br>
 São eles:</p>
 <p>
-  - O Software deve funcionar diretamente na máquina do usuário, sendo capaz de rodar sem problemas e ou travamentos.<br>
-  - A interface deve ser simples e intuitiva, facilitando a navegação e deixando a experiência mais agradável para um usuário não técnico.<br>
-  - A segurança do sistema é necessária para que nenhum usuário não autorizado altere as informações.<br>
-  - O sistema deve ser capaz de suportar uma quantidade considerável de dados e sem travamentos, permanecendo responsivo e eficiente.<br>
-  - Facilidade para realizar atualizações e correções nos cadastros, sem grandes complicações e mantendo sempre de uma forma de fácil entendimento para o usuário final.
+  - RNF001: O sistema operacional deve ser utilizado no Windows 10.<br>
+  - RFN002: O programa deve rodar localmente em um computador pessoal.<br>
+  - RFN003: O programa deve ser desenvolvido em Java, Na versão 8.<br>
+  - RFN004: O programa deve ser conectado a uma base de dados usando mySQL, Na versão 8.4.0.
 </p>
 
 ## <h3>⚙️ Programas:</h3>
