@@ -43,3 +43,7 @@ build/
 **/logs
 **/temp
 **/*.log
+
+# MySQL (if applicable)
+*.sql        # Ignore SQL dump files
+*.sqlite     # Ignore SQLite database files
