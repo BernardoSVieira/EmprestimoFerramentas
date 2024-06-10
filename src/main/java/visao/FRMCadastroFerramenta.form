@@ -31,17 +31,17 @@
           <Group type="102" attributes="0">
               <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jLabel1" min="-2" pref="76" max="-2" attributes="0"/>
-                  <Component id="jLabel3" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel2" alignment="0" min="-2" pref="58" max="-2" attributes="0"/>
-                  <Component id="jBConfirmar" alignment="0" min="-2" pref="90" max="-2" attributes="0"/>
+                  <Component id="jLFerramenta" min="-2" pref="76" max="-2" attributes="0"/>
+                  <Component id="jLCustoAquisição" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLMarca" alignment="0" min="-2" pref="58" max="-2" attributes="0"/>
+                  <Component id="jBCadastrar" alignment="0" min="-2" pref="90" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <Component id="jBGerenciamento" pref="191" max="32767" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="jBCancelar" min="-2" pref="90" max="-2" attributes="0"/>
+                      <Component id="jBVoltar" min="-2" pref="90" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
@@ -63,24 +63,24 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLFerramenta" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jTFFerramenta" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLMarca" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jTFMarca" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLCustoAquisição" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jTFCusto" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="97" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jBConfirmar" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jBCadastrar" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jBGerenciamento" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jBCancelar" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jBVoltar" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="74" max="-2" attributes="0"/>
           </Group>
@@ -88,7 +88,7 @@
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JLabel" name="jLabel1">
+    <Component class="javax.swing.JLabel" name="jLFerramenta">
       <Properties>
         <Property name="text" type="java.lang.String" value="Ferramenta:"/>
       </Properties>
@@ -98,23 +98,23 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTFFerramentaActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel2">
+    <Component class="javax.swing.JLabel" name="jLMarca">
       <Properties>
         <Property name="text" type="java.lang.String" value="Marca:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="jTFMarca">
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel3">
+    <Component class="javax.swing.JLabel" name="jLCustoAquisi&#xe7;&#xe3;o">
       <Properties>
         <Property name="text" type="java.lang.String" value="Custo de aquisi&#xe7;&#xe3;o:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="jTFCusto">
     </Component>
-    <Component class="javax.swing.JButton" name="jBConfirmar">
+    <Component class="javax.swing.JButton" name="jBCadastrar">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Confirmar"/>
+        <Property name="text" type="java.lang.String" value="Cadastrar"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jBGerenciamento">
@@ -125,9 +125,9 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBGerenciamentoActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jBCancelar">
+    <Component class="javax.swing.JButton" name="jBVoltar">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Cancelar"/>
+        <Property name="text" type="java.lang.String" value="Voltar"/>
       </Properties>
     </Component>
   </SubComponents>

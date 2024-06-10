@@ -19,20 +19,20 @@ public class FRMCadastroFerramenta extends javax.swing.JFrame {
     private void initComponents() {
 
         jTFMarca1 = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
+        jLFerramenta = new javax.swing.JLabel();
         jTFFerramenta = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
+        jLMarca = new javax.swing.JLabel();
         jTFMarca = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
+        jLCustoAquisição = new javax.swing.JLabel();
         jTFCusto = new javax.swing.JTextField();
-        jBConfirmar = new javax.swing.JButton();
+        jBCadastrar = new javax.swing.JButton();
         jBGerenciamento = new javax.swing.JButton();
-        jBCancelar = new javax.swing.JButton();
+        jBVoltar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Cadastro de Ferramentas");
 
-        jLabel1.setText("Ferramenta:");
+        jLFerramenta.setText("Ferramenta:");
 
         jTFFerramenta.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -40,11 +40,11 @@ public class FRMCadastroFerramenta extends javax.swing.JFrame {
             }
         });
 
-        jLabel2.setText("Marca:");
+        jLMarca.setText("Marca:");
 
-        jLabel3.setText("Custo de aquisição:");
+        jLCustoAquisição.setText("Custo de aquisição:");
 
-        jBConfirmar.setText("Confirmar");
+        jBCadastrar.setText("Cadastrar");
 
         jBGerenciamento.setText("Gerenciamento de Ferramentas");
         jBGerenciamento.addActionListener(new java.awt.event.ActionListener() {
@@ -53,7 +53,7 @@ public class FRMCadastroFerramenta extends javax.swing.JFrame {
             }
         });
 
-        jBCancelar.setText("Cancelar");
+        jBVoltar.setText("Voltar");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -62,16 +62,16 @@ public class FRMCadastroFerramenta extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jBConfirmar, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLFerramenta, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLCustoAquisição)
+                    .addComponent(jLMarca, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jBCadastrar, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jBGerenciamento, javax.swing.GroupLayout.PREFERRED_SIZE, 191, Short.MAX_VALUE)
                         .addGap(18, 18, 18)
-                        .addComponent(jBCancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jBVoltar, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(24, 24, 24))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -86,21 +86,21 @@ public class FRMCadastroFerramenta extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(13, 13, 13)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
+                    .addComponent(jLFerramenta)
                     .addComponent(jTFFerramenta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
+                    .addComponent(jLMarca)
                     .addComponent(jTFMarca, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
+                    .addComponent(jLCustoAquisição)
                     .addComponent(jTFCusto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 97, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jBConfirmar)
+                    .addComponent(jBCadastrar)
                     .addComponent(jBGerenciamento)
-                    .addComponent(jBCancelar))
+                    .addComponent(jBVoltar))
                 .addGap(74, 74, 74))
         );
 
@@ -152,12 +152,12 @@ public class FRMCadastroFerramenta extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jBCancelar;
-    private javax.swing.JButton jBConfirmar;
+    private javax.swing.JButton jBCadastrar;
     private javax.swing.JButton jBGerenciamento;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
+    private javax.swing.JButton jBVoltar;
+    private javax.swing.JLabel jLCustoAquisição;
+    private javax.swing.JLabel jLFerramenta;
+    private javax.swing.JLabel jLMarca;
     private javax.swing.JTextField jTFCusto;
     private javax.swing.JTextField jTFFerramenta;
     private javax.swing.JTextField jTFMarca;

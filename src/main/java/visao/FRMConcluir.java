@@ -22,8 +22,8 @@ public class FRMConcluir extends javax.swing.JFrame {
         jTable1 = new javax.swing.JTable();
         jLIdempréstimo = new javax.swing.JLabel();
         jLDatadeDevolução = new javax.swing.JLabel();
-        jTexto1 = new javax.swing.JTextField();
-        jTexto2 = new javax.swing.JTextField();
+        jTFIdEmpréstimo = new javax.swing.JTextField();
+        jTFDataDevolução = new javax.swing.JTextField();
         jBConfirmar = new javax.swing.JToggleButton();
         jBCancelar = new javax.swing.JToggleButton();
 
@@ -55,9 +55,9 @@ public class FRMConcluir extends javax.swing.JFrame {
 
         jLDatadeDevolução.setText("Data de Devolução:");
 
-        jTexto1.addActionListener(new java.awt.event.ActionListener() {
+        jTFIdEmpréstimo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTexto1ActionPerformed(evt);
+                jTFIdEmpréstimoActionPerformed(evt);
             }
         });
 
@@ -84,8 +84,8 @@ public class FRMConcluir extends javax.swing.JFrame {
                             .addComponent(jLDatadeDevolução))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTexto2)
-                            .addComponent(jTexto1))))
+                            .addComponent(jTFDataDevolução)
+                            .addComponent(jTFIdEmpréstimo))))
                 .addContainerGap())
             .addGroup(layout.createSequentialGroup()
                 .addGap(51, 51, 51)
@@ -102,10 +102,10 @@ public class FRMConcluir extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLIdempréstimo)
-                    .addComponent(jTexto1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTFIdEmpréstimo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTexto2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTFDataDevolução, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLDatadeDevolução))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -117,9 +117,9 @@ public class FRMConcluir extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTexto1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTexto1ActionPerformed
+    private void jTFIdEmpréstimoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTFIdEmpréstimoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTexto1ActionPerformed
+    }//GEN-LAST:event_jTFIdEmpréstimoActionPerformed
 
     private void jBConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBConfirmarActionPerformed
         // TODO add your handling code here:
@@ -166,8 +166,8 @@ public class FRMConcluir extends javax.swing.JFrame {
     private javax.swing.JLabel jLDatadeDevolução;
     private javax.swing.JLabel jLIdempréstimo;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextField jTFDataDevolução;
+    private javax.swing.JTextField jTFIdEmpréstimo;
     private javax.swing.JTable jTable1;
-    private javax.swing.JTextField jTexto1;
-    private javax.swing.JTextField jTexto2;
     // End of variables declaration//GEN-END:variables
 }

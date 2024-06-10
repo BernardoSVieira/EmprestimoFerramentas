@@ -19,7 +19,7 @@ public class FRMGerenciamentoAmigo extends javax.swing.JFrame {
     private void initComponents() {
 
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTA = new javax.swing.JTable();
+        jTabela = new javax.swing.JTable();
         jLId = new javax.swing.JLabel();
         jLNovoNome = new javax.swing.JLabel();
         jLNovoTelefone = new javax.swing.JLabel();
@@ -27,12 +27,12 @@ public class FRMGerenciamentoAmigo extends javax.swing.JFrame {
         jTFNovoNome = new javax.swing.JTextField();
         jTFNovoTelefone = new javax.swing.JTextField();
         jBConfirmar = new javax.swing.JToggleButton();
-        jBCancelar = new javax.swing.JToggleButton();
+        jBVoltar = new javax.swing.JToggleButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Gerenciamento de Amigos");
 
-        jTA.setModel(new javax.swing.table.DefaultTableModel(
+        jTabela.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null},
                 {null, null, null},
@@ -51,7 +51,7 @@ public class FRMGerenciamentoAmigo extends javax.swing.JFrame {
                 return types [columnIndex];
             }
         });
-        jScrollPane1.setViewportView(jTA);
+        jScrollPane1.setViewportView(jTabela);
 
         jLId.setText("Id:");
 
@@ -61,10 +61,10 @@ public class FRMGerenciamentoAmigo extends javax.swing.JFrame {
 
         jBConfirmar.setText("Confirmar");
 
-        jBCancelar.setText("Cancelar");
-        jBCancelar.addActionListener(new java.awt.event.ActionListener() {
+        jBVoltar.setText("Voltar");
+        jBVoltar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBCancelarActionPerformed(evt);
+                jBVoltarActionPerformed(evt);
             }
         });
 
@@ -91,7 +91,7 @@ public class FRMGerenciamentoAmigo extends javax.swing.JFrame {
                 .addGap(49, 49, 49)
                 .addComponent(jBConfirmar, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jBCancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jBVoltar, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(37, 37, 37))
         );
         layout.setVerticalGroup(
@@ -114,16 +114,16 @@ public class FRMGerenciamentoAmigo extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jBConfirmar)
-                    .addComponent(jBCancelar))
+                    .addComponent(jBVoltar))
                 .addContainerGap(27, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jBCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBCancelarActionPerformed
+    private void jBVoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBVoltarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jBCancelarActionPerformed
+    }//GEN-LAST:event_jBVoltarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -162,15 +162,15 @@ public class FRMGerenciamentoAmigo extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JToggleButton jBCancelar;
     private javax.swing.JToggleButton jBConfirmar;
+    private javax.swing.JToggleButton jBVoltar;
     private javax.swing.JLabel jLId;
     private javax.swing.JLabel jLNovoNome;
     private javax.swing.JLabel jLNovoTelefone;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTA;
     private javax.swing.JTextField jTFId;
     private javax.swing.JTextField jTFNovoNome;
     private javax.swing.JTextField jTFNovoTelefone;
+    private javax.swing.JTable jTabela;
     // End of variables declaration//GEN-END:variables
 }

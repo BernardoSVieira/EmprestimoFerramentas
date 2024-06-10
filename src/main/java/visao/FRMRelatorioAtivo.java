@@ -20,13 +20,13 @@ public class FRMRelatorioAtivo extends javax.swing.JFrame {
 
         jSlider1 = new javax.swing.JSlider();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTabela = new javax.swing.JTable();
+        jTabelaRelatorioAtivo = new javax.swing.JTable();
         jBVoltar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Empréstimos Ativos");
 
-        jTabela.setModel(new javax.swing.table.DefaultTableModel(
+        jTabelaRelatorioAtivo.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null},
                 {null, null, null, null, null},
@@ -52,7 +52,7 @@ public class FRMRelatorioAtivo extends javax.swing.JFrame {
                 return canEdit [columnIndex];
             }
         });
-        jScrollPane1.setViewportView(jTabela);
+        jScrollPane1.setViewportView(jTabelaRelatorioAtivo);
 
         jBVoltar.setText("Voltar");
         jBVoltar.addActionListener(new java.awt.event.ActionListener() {
@@ -67,7 +67,7 @@ public class FRMRelatorioAtivo extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 427, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
-                .addGap(176, 176, 176)
+                .addGap(172, 172, 172)
                 .addComponent(jBVoltar)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -75,9 +75,9 @@ public class FRMRelatorioAtivo extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 262, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(27, 27, 27)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
                 .addComponent(jBVoltar)
-                .addGap(0, 28, Short.MAX_VALUE))
+                .addGap(23, 23, 23))
         );
 
         pack();
@@ -126,6 +126,6 @@ public class FRMRelatorioAtivo extends javax.swing.JFrame {
     private javax.swing.JButton jBVoltar;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSlider jSlider1;
-    private javax.swing.JTable jTabela;
+    private javax.swing.JTable jTabelaRelatorioAtivo;
     // End of variables declaration//GEN-END:variables
 }

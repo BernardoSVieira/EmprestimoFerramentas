@@ -18,6 +18,7 @@ public class FRMEmprestimoFerramenta extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jTextField1 = new javax.swing.JTextField();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTA = new javax.swing.JTable();
         jScrollPane2 = new javax.swing.JScrollPane();
@@ -33,6 +34,8 @@ public class FRMEmprestimoFerramenta extends javax.swing.JFrame {
         jLQuantidadeFerramentas = new javax.swing.JLabel();
         jBConfirmar = new javax.swing.JToggleButton();
         jBCancelar = new javax.swing.JToggleButton();
+
+        jTextField1.setText("jTextField1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Empréstimo de Ferramentas");
@@ -236,5 +239,6 @@ public class FRMEmprestimoFerramenta extends javax.swing.JFrame {
     private javax.swing.JTextField jTFDataEmpréstimo;
     private javax.swing.JTextField jTFIdAmigo;
     private javax.swing.JTextField jTFIdFerramenta;
+    private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }

@@ -20,15 +20,17 @@ public class FRMGerenciamentoFerramenta extends javax.swing.JFrame {
 
         jScrollPane1 = new javax.swing.JScrollPane();
         jTA = new javax.swing.JTable();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
+        jLId = new javax.swing.JLabel();
+        jLNovoNome = new javax.swing.JLabel();
+        jLNovaMarca = new javax.swing.JLabel();
+        jLNovoCusto = new javax.swing.JLabel();
         jTFId = new javax.swing.JTextField();
         jTFNovoNome = new javax.swing.JTextField();
         jTFNovaMarca = new javax.swing.JTextField();
         jTFNovoCusto = new javax.swing.JTextField();
         jRBDisponível = new javax.swing.JRadioButton();
+        jBConfirmar = new javax.swing.JButton();
+        jBVoltar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Gerenciamento de Ferramentas");
@@ -54,13 +56,13 @@ public class FRMGerenciamentoFerramenta extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(jTA);
 
-        jLabel1.setText("Id:");
+        jLId.setText("Id:");
 
-        jLabel2.setText("Novo Nome:");
+        jLNovoNome.setText("Novo Nome:");
 
-        jLabel3.setText("Nova Marca:");
+        jLNovaMarca.setText("Nova Marca:");
 
-        jLabel4.setText("Novo Custo:");
+        jLNovoCusto.setText("Novo Custo:");
 
         jTFNovoNome.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -75,6 +77,10 @@ public class FRMGerenciamentoFerramenta extends javax.swing.JFrame {
             }
         });
 
+        jBConfirmar.setText("Confirmar");
+
+        jBVoltar.setText("Voltar");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -84,21 +90,17 @@ public class FRMGerenciamentoFerramenta extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
+                        .addGap(0, 3, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel3)
+                                .addComponent(jLNovaMarca)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(jTFNovaMarca))
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel4)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTFNovoCusto))
-                            .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jLabel2)
-                                    .addComponent(jLabel1))
+                                    .addComponent(jLNovoNome)
+                                    .addComponent(jLId))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
@@ -106,9 +108,19 @@ public class FRMGerenciamentoFerramenta extends javax.swing.JFrame {
                                         .addGap(52, 52, 52)
                                         .addComponent(jRBDisponível)
                                         .addGap(0, 0, Short.MAX_VALUE))
-                                    .addComponent(jTFNovoNome))))
+                                    .addComponent(jTFNovoNome)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLNovoCusto)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jTFNovoCusto)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jBConfirmar, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(jBVoltar, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(44, 44, 44)))))
                         .addGap(34, 34, 34)))
-                .addContainerGap(6, Short.MAX_VALUE))
+                .addContainerGap(9, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -117,22 +129,26 @@ public class FRMGerenciamentoFerramenta extends javax.swing.JFrame {
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
+                    .addComponent(jLId)
                     .addComponent(jTFId, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jRBDisponível))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
+                    .addComponent(jLNovoNome)
                     .addComponent(jTFNovoNome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jTFNovaMarca, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel3))
+                    .addComponent(jLNovaMarca))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jTFNovoCusto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel4))
-                .addContainerGap(30, Short.MAX_VALUE))
+                    .addComponent(jLNovoCusto))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jBConfirmar)
+                    .addComponent(jBVoltar))
+                .addGap(34, 34, 34))
         );
 
         pack();
@@ -183,10 +199,12 @@ public class FRMGerenciamentoFerramenta extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
+    private javax.swing.JButton jBConfirmar;
+    private javax.swing.JButton jBVoltar;
+    private javax.swing.JLabel jLId;
+    private javax.swing.JLabel jLNovaMarca;
+    private javax.swing.JLabel jLNovoCusto;
+    private javax.swing.JLabel jLNovoNome;
     private javax.swing.JRadioButton jRBDisponível;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTA;
