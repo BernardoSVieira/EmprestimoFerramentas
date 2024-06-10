@@ -9,7 +9,7 @@
 <p>
   Bernardo Santos Vieira - RA: 1072415392 - GitHub: <a href="https://github.com/BernardoSVieira">bernardosvieira</a><br>
   Eduardo Alfredo Coelho - RA: 1072419300 - GitHub: <a href="https://github.com/Eduardocoelh0">eduardocoelh0</a><br>
-  Guilherme Schveitzer - RA: 1072415715 - GitHub: <a href="https://github.com/GuilhermeSchveitzer">guilhermeSchveitzer</a> e PC Gamer<br>
+  Guilherme Schveitzer - RA: 1072415715 - GitHub: <a href="https://github.com/GuilhermeSchveitzer">guilhermeSchveitzer</a> - PC Gamer<br>
   Victor Hasse - RA: 10724111755 - GitHub: <a href="https://github.com/victorhasse>victorhasse">victorhasse</a><br>
   Vitor Hugo Coelho Vitorino - RA: 1072415406 - GitHub: <a href="https://github.com/Conepotato">conepotato</a><br>
 </p>
