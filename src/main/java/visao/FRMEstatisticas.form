@@ -24,47 +24,47 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
-              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+              <Component id="jLEstatisticaFerramentas" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
-              <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+              <Component id="jLResumoFincanceiro" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="111" max="-2" attributes="0"/>
           </Group>
           <Group type="102" alignment="1" attributes="0">
               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
-                  <Component id="jComboBox2" min="-2" pref="210" max="-2" attributes="0"/>
-                  <Component id="jComboBox4" min="-2" pref="215" max="-2" attributes="0"/>
+                  <Component id="jCBTotalInvestidoFerramentas" min="-2" pref="210" max="-2" attributes="0"/>
+                  <Component id="jCBGraficoEmprestimoMes" min="-2" pref="215" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
           </Group>
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
-              <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="169" max="32767" attributes="0"/>
-              <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+              <Component id="jLEstatisticasEmprestimos" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="164" max="32767" attributes="0"/>
+              <Component id="jLHistoricoEmprestimo" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="98" max="-2" attributes="0"/>
           </Group>
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jComboBox3" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="jComboBox1" alignment="0" min="-2" pref="255" max="-2" attributes="0"/>
+                  <Component id="jCBTotalEmprestimosRealizados" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="jCBTotalFerramentasCadastradas" alignment="0" min="-2" pref="255" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="32767" attributes="0"/>
           </Group>
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="93" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jBConfirmar" alignment="0" min="-2" pref="92" max="-2" attributes="0"/>
-                  <Component id="jBCalcular" alignment="0" min="-2" pref="92" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Component id="jBConfirmar" pref="100" max="32767" attributes="0"/>
+                  <Component id="jBCalcular" max="32767" attributes="0"/>
               </Group>
               <EmptySpace max="32767" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jBVoltar" min="-2" pref="90" max="-2" attributes="0"/>
-                  <Component id="jBAtualizar" min="-2" pref="92" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Component id="jBAtualizar" pref="100" max="32767" attributes="0"/>
+                  <Component id="jBVoltar" max="32767" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="125" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="117" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -72,30 +72,31 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jLEstatisticaFerramentas" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLResumoFincanceiro" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jCBTotalFerramentasCadastradas" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jCBTotalInvestidoFerramentas" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jLEstatisticasEmprestimos" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLHistoricoEmprestimo" min="-2" pref="16" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jCBTotalEmprestimosRealizados" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jCBGraficoEmprestimoMes" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jComboBox1" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jComboBox2" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jComboBox3" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jComboBox4" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace pref="123" max="32767" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace min="-2" pref="114" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jBConfirmar" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jBVoltar" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -107,13 +108,13 @@
                   <Component id="jBCalcular" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jBAtualizar" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="36" max="32767" attributes="0"/>
+              <EmptySpace pref="18" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JComboBox" name="jComboBox1">
+    <Component class="javax.swing.JComboBox" name="jCBTotalFerramentasCadastradas">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
           <StringArray count="3">
@@ -127,17 +128,17 @@
         <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
       </AuxValues>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel1">
+    <Component class="javax.swing.JLabel" name="jLEstatisticaFerramentas">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Estatistica de Ferramentas"/>
+        <Property name="text" type="java.lang.String" value="Estatistica de Ferramentas:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel2">
+    <Component class="javax.swing.JLabel" name="jLResumoFincanceiro">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Resumo Financeiro"/>
+        <Property name="text" type="java.lang.String" value="Resumo Financeiro:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JComboBox" name="jComboBox2">
+    <Component class="javax.swing.JComboBox" name="jCBTotalInvestidoFerramentas">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
           <StringArray count="4">
@@ -152,12 +153,12 @@
         <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
       </AuxValues>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel3">
+    <Component class="javax.swing.JLabel" name="jLEstatisticasEmprestimos">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Estat&#xed;sticas de Empr&#xe9;stimos"/>
+        <Property name="text" type="java.lang.String" value="Estat&#xed;sticas de Empr&#xe9;stimos:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JComboBox" name="jComboBox3">
+    <Component class="javax.swing.JComboBox" name="jCBTotalEmprestimosRealizados">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
           <StringArray count="4">
@@ -172,12 +173,12 @@
         <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
       </AuxValues>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel4">
+    <Component class="javax.swing.JLabel" name="jLHistoricoEmprestimo">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Hist&#xf3;rico de Empr&#xe9;stimos"/>
+        <Property name="text" type="java.lang.String" value="Hist&#xf3;rico de Empr&#xe9;stimos:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JComboBox" name="jComboBox4">
+    <Component class="javax.swing.JComboBox" name="jCBGraficoEmprestimoMes">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
           <StringArray count="2">

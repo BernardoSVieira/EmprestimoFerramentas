@@ -27,7 +27,6 @@ public class FRMCentral extends javax.swing.JFrame {
         jMIConcluirEmprestimo = new javax.swing.JMenuItem();
         jMIGerenciamentoFerramentas = new javax.swing.JMenuItem();
         jMIGerenciamentoAmigos = new javax.swing.JMenuItem();
-        jMITestePopUp = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
         jMIRelatorioAtivo = new javax.swing.JMenuItem();
         jMIRelatorioFerramenta = new javax.swing.JMenuItem();
@@ -95,9 +94,6 @@ public class FRMCentral extends javax.swing.JFrame {
             }
         });
         jMenu1.add(jMIGerenciamentoAmigos);
-
-        jMITestePopUp.setText("Teste PopUp");
-        jMenu1.add(jMITestePopUp);
 
         jMenuBar1.add(jMenu1);
 
@@ -248,7 +244,6 @@ public class FRMCentral extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMIGerenciamentoFerramentas;
     private javax.swing.JMenuItem jMIRelatorioAtivo;
     private javax.swing.JMenuItem jMIRelatorioFerramenta;
-    private javax.swing.JMenuItem jMITestePopUp;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;

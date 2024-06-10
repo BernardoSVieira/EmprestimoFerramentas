@@ -18,14 +18,14 @@ public class FRMEstatisticas extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jComboBox1 = new javax.swing.JComboBox<>();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jComboBox2 = new javax.swing.JComboBox<>();
-        jLabel3 = new javax.swing.JLabel();
-        jComboBox3 = new javax.swing.JComboBox<>();
-        jLabel4 = new javax.swing.JLabel();
-        jComboBox4 = new javax.swing.JComboBox<>();
+        jCBTotalFerramentasCadastradas = new javax.swing.JComboBox<>();
+        jLEstatisticaFerramentas = new javax.swing.JLabel();
+        jLResumoFincanceiro = new javax.swing.JLabel();
+        jCBTotalInvestidoFerramentas = new javax.swing.JComboBox<>();
+        jLEstatisticasEmprestimos = new javax.swing.JLabel();
+        jCBTotalEmprestimosRealizados = new javax.swing.JComboBox<>();
+        jLHistoricoEmprestimo = new javax.swing.JLabel();
+        jCBGraficoEmprestimoMes = new javax.swing.JComboBox<>();
         jBVoltar = new javax.swing.JButton();
         jBConfirmar = new javax.swing.JButton();
         jBAtualizar = new javax.swing.JButton();
@@ -33,21 +33,21 @@ public class FRMEstatisticas extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Total de Ferramentas Cadastradas", "Ferramentas Mais Emprestadas", "Ferramentas Não Devolvidas " }));
+        jCBTotalFerramentasCadastradas.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Total de Ferramentas Cadastradas", "Ferramentas Mais Emprestadas", "Ferramentas Não Devolvidas " }));
 
-        jLabel1.setText("Estatistica de Ferramentas");
+        jLEstatisticaFerramentas.setText("Estatistica de Ferramentas:");
 
-        jLabel2.setText("Resumo Financeiro");
+        jLResumoFincanceiro.setText("Resumo Financeiro:");
 
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Total Investido em Ferramentas", "Ferramenta mais Cara", "Amigo com Empréstimos Não Devolvidos", "Amigo com Mais Empréstimos" }));
+        jCBTotalInvestidoFerramentas.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Total Investido em Ferramentas", "Ferramenta mais Cara", "Amigo com Empréstimos Não Devolvidos", "Amigo com Mais Empréstimos" }));
 
-        jLabel3.setText("Estatísticas de Empréstimos");
+        jLEstatisticasEmprestimos.setText("Estatísticas de Empréstimos:");
 
-        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Total de Empréstimos Realizados", "Empréstimos Ativos", "Amigo com Mais Empréstimos", "Amigo com Empréstimos Não Devolvidos" }));
+        jCBTotalEmprestimosRealizados.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Total de Empréstimos Realizados", "Empréstimos Ativos", "Amigo com Mais Empréstimos", "Amigo com Empréstimos Não Devolvidos" }));
 
-        jLabel4.setText("Histórico de Empréstimos");
+        jLHistoricoEmprestimo.setText("Histórico de Empréstimos:");
 
-        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Gráfico de Empréstimos por Mês", "Lista de Empréstimos Realizados" }));
+        jCBGraficoEmprestimoMes.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Gráfico de Empréstimos por Mês", "Lista de Empréstimos Realizados" }));
 
         jBVoltar.setText("Voltar");
         jBVoltar.addActionListener(new java.awt.event.ActionListener() {
@@ -72,63 +72,64 @@ public class FRMEstatisticas extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(29, 29, 29)
-                .addComponent(jLabel1)
+                .addGap(33, 33, 33)
+                .addComponent(jLEstatisticaFerramentas)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel2)
+                .addComponent(jLResumoFincanceiro)
                 .addGap(111, 111, 111))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jComboBox4, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jCBTotalInvestidoFerramentas, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jCBGraficoEmprestimoMes, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(58, 58, 58))
             .addGroup(layout.createSequentialGroup()
                 .addGap(33, 33, 33)
-                .addComponent(jLabel3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 169, Short.MAX_VALUE)
-                .addComponent(jLabel4)
+                .addComponent(jLEstatisticasEmprestimos)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 164, Short.MAX_VALUE)
+                .addComponent(jLHistoricoEmprestimo)
                 .addGap(98, 98, 98))
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 255, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jCBTotalEmprestimosRealizados, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jCBTotalFerramentasCadastradas, javax.swing.GroupLayout.PREFERRED_SIZE, 255, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addGap(93, 93, 93)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jBConfirmar, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jBCalcular, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jBConfirmar, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+                    .addComponent(jBCalcular, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jBVoltar, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jBAtualizar, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(125, 125, 125))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jBAtualizar, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+                    .addComponent(jBVoltar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(117, 117, 117))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLEstatisticaFerramentas)
+                    .addComponent(jLResumoFincanceiro))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jCBTotalFerramentasCadastradas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jCBTotalInvestidoFerramentas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLEstatisticasEmprestimos)
+                    .addComponent(jLHistoricoEmprestimo, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel1)
-                            .addComponent(jLabel2))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel3)
-                            .addComponent(jLabel4))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jComboBox4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 123, Short.MAX_VALUE))
+                            .addComponent(jCBTotalEmprestimosRealizados, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jCBGraficoEmprestimoMes, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGap(114, 114, 114)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jBConfirmar)
                             .addComponent(jBVoltar))
@@ -136,7 +137,7 @@ public class FRMEstatisticas extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jBCalcular)
                     .addComponent(jBAtualizar))
-                .addContainerGap(36, Short.MAX_VALUE))
+                .addContainerGap(18, Short.MAX_VALUE))
         );
 
         pack();
@@ -190,13 +191,13 @@ public class FRMEstatisticas extends javax.swing.JFrame {
     private javax.swing.JButton jBCalcular;
     private javax.swing.JButton jBConfirmar;
     private javax.swing.JButton jBVoltar;
-    private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JComboBox<String> jComboBox2;
-    private javax.swing.JComboBox<String> jComboBox3;
-    private javax.swing.JComboBox<String> jComboBox4;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
+    private javax.swing.JComboBox<String> jCBGraficoEmprestimoMes;
+    private javax.swing.JComboBox<String> jCBTotalEmprestimosRealizados;
+    private javax.swing.JComboBox<String> jCBTotalFerramentasCadastradas;
+    private javax.swing.JComboBox<String> jCBTotalInvestidoFerramentas;
+    private javax.swing.JLabel jLEstatisticaFerramentas;
+    private javax.swing.JLabel jLEstatisticasEmprestimos;
+    private javax.swing.JLabel jLHistoricoEmprestimo;
+    private javax.swing.JLabel jLResumoFincanceiro;
     // End of variables declaration//GEN-END:variables
 }
