@@ -30,7 +30,7 @@ São eles:</p>
 </p>
 
 ## <h3>❌ Requisitos Não Funcionais:</h3>
-<p>responsáveis por definir as características e propriedades de um sistema, que não estão diretamente relacionadas às suas funcionalidades específicas, mas que são igualmente importantes para seu sucesso. Eles descrevem atributos de qualidade, restrições e condições que um sistema deve atender. são responsáveis por impactar na experiência do usuário, envolvendo desempenho, arquitetura.<br>
+<p>Responsáveis por definir as características e propriedades de um sistema, que não estão diretamente relacionadas às suas funcionalidades específicas, mas que são igualmente importantes para seu sucesso. Eles descrevem atributos de qualidade, restrições e condições que um sistema deve atender. são responsáveis por impactar na experiência do usuário, envolvendo desempenho, arquitetura.<br>
 São eles:</p>
 <p>
   - RNF001: O sistema operacional deve ser utilizado no Windows 10.<br>
