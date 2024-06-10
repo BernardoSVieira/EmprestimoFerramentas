@@ -31,12 +31,12 @@ public class FRMCentral extends javax.swing.JFrame {
         jMenu2 = new javax.swing.JMenu();
         jMIRelatorioAtivo = new javax.swing.JMenuItem();
         jMIRelatorioFerramenta = new javax.swing.JMenuItem();
-        jMIRelatorioToods = new javax.swing.JMenuItem();
         jMIEstatisticas = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Central de Cadastros");
 
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N
         jLabel1.setText("Bem Vindo!");
         jLabel1.setMaximumSize(new java.awt.Dimension(100, 16));
         jLabel1.setPreferredSize(new java.awt.Dimension(100, 16));
@@ -119,14 +119,6 @@ public class FRMCentral extends javax.swing.JFrame {
         });
         jMenu2.add(jMIRelatorioFerramenta);
 
-        jMIRelatorioToods.setText("Todos os Empréstimos");
-        jMIRelatorioToods.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMIRelatorioToodsActionPerformed(evt);
-            }
-        });
-        jMenu2.add(jMIRelatorioToods);
-
         jMIEstatisticas.setText("Estatísticas");
         jMIEstatisticas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -144,16 +136,16 @@ public class FRMCentral extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(144, 144, 144)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(156, Short.MAX_VALUE))
+                .addGap(76, 76, 76)
+                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 250, Short.MAX_VALUE)
+                .addGap(74, 74, 74))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(109, 109, 109)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(152, Short.MAX_VALUE))
+                .addGap(94, 94, 94)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(117, Short.MAX_VALUE))
         );
 
         pack();
@@ -203,11 +195,6 @@ public class FRMCentral extends javax.swing.JFrame {
         FRMConcluir concluirEmprestimo = new FRMConcluir();
     concluirEmprestimo.setVisible(true);
     }//GEN-LAST:event_jMIConcluirEmprestimoActionPerformed
-
-    private void jMIRelatorioToodsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMIRelatorioToodsActionPerformed
-        FRMRelatorioTodos relatorioTodos = new FRMRelatorioTodos();
-    relatorioTodos.setVisible(true);
-    }//GEN-LAST:event_jMIRelatorioToodsActionPerformed
 
     private void jMIEstatisticasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMIEstatisticasActionPerformed
       FRMEstatisticas estatisticas = new FRMEstatisticas();
@@ -261,7 +248,6 @@ public class FRMCentral extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMIGerenciamentoFerramentas;
     private javax.swing.JMenuItem jMIRelatorioAtivo;
     private javax.swing.JMenuItem jMIRelatorioFerramenta;
-    private javax.swing.JMenuItem jMIRelatorioToods;
     private javax.swing.JMenuItem jMITestePopUp;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
