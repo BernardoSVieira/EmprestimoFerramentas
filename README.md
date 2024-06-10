@@ -5,6 +5,15 @@
   Este projeto foi estipulado para a realização de uma UC da disciplina de Programação de Soluções Computacionais da Universidade do Sul de Santa Catarina. Trata-se de uma interface gráfica que permite registrar amigos e ferramentas, bem como conceder e gerenciar empréstimos dessas ferramentas para os amigos, com todas as informações armazenadas em um banco de dados MySQL.
 </p>
 
+## <h3> 👥 Alunos/ Desenvolvedores:</h3>
+<p>
+  Bernardo Santos Vieira - RA: 1072415392 - GitHub: <a href="https://github.com/BernardoSVieira">bernardosvieira</a><br>
+  Eduardo Alfredo Coelho - RA: 1072419300 - GitHub: <a href="https://github.com/Eduardocoelh0">eduardocoelh0</a><br>
+  Guilherme Schveitzer - RA: 1072415715 - GitHub: <a href="https://github.com/GuilhermeSchveitzer">guilhermeSchveitzer</a> e PC Gamer<br>
+  Victor Hasse - RA: 10724111755 - GitHub: <a href="https://github.com/victorhasse>victorhasse">victorhasse</a><br>
+  Vitor Hugo Coelho Vitorino - RA: 1072415406 - GitHub: <a href="https://github.com/Conepotato">conepotato</a><br>
+</p>
+
 ## <h3>📖 História:</h3>
 <p>
   No churrasco de família, seu tio-avô, lhe pediu um software para gerenciar o empréstimo de ferramentas. Ele quer o software que rode localmente no computador dele. A ideia é ter um cadastro de ferramentas (nome, marca, custo de aquisição) e o de amigos (nome, telefone). 
