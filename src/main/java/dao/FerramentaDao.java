@@ -1,24 +1,25 @@
 package dao;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
+import java.util.ArrayList;
 import modelo.Ferramenta;
 
 public class FerramentaDao {
-    public void adicionarFerramenta(Ferramenta ferramenta) {
-        String sql = "INSERT INTO tb_ferramenta (id_ferramenta, nome, custo, marca) VALUES (?, ?, ?, ?)";
 
-        try (Connection conn = Conexao.getConnection();
-             PreparedStatement stmt = conn.prepareStatement(sql)) {
-
-            stmt.setInt(1, ferramenta.getId());
-            stmt.setString(2, ferramenta.getNome());
-            stmt.setFloat(3, ferramenta.getCusto());
-            stmt.setString(4, ferramenta.getMarca());
-            stmt.executeUpdate();
-        } catch (SQLException e) {
-            e.printStackTrace();
+     public static ArrayList<Ferramenta> minhaLista = new ArrayList<>();
+   
+      public static ArrayList<Ferramenta> getMinhaLista() {
+        return minhaLista;
+      }
+    public static void setMinhaLista(ArrayList<Ferramenta> minhaLista) {
+        FerramentaDao.minhaLista = minhaLista;
+    }
+    public static int maiorID() {
+        int maiorID = 0;
+        for (int i = 0; i < minhaLista.size(); i++) {
+            if (minhaLista.get(i).getId_ferramenta() > maiorID) {
+                maiorID = minhaLista.get(i).getId_ferramenta();
+            }
         }
+        return maiorID;
     }
 }

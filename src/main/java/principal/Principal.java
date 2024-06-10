@@ -11,15 +11,17 @@ public class Principal {
         String user = "root";
         String password = "root";
 
+            FRMCentral objetotela = new FRMCentral();
+         objetotela.setVisible(true);
         try {
+            
             Connection conn = DriverManager.getConnection(url, user, password);
             System.out.println("Conexão bem-sucedida!");
         } catch (SQLException e) {
             e.printStackTrace();
             System.out.println("Falha na conexão!");
        
-         FRMCentral objetotela = new FRMCentral();
-         objetotela.setVisible(true);
+         
         }
     } 
 }            

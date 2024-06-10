@@ -1,61 +1,89 @@
 package modelo;
 
+import dao.FerramentaDao;
+import java.util.ArrayList;
+
 public class Ferramenta {
-   
-    private int id;
+
+    private int id_ferramenta;
     private String nome;
     private String marca;
-    private double custoAquisicao;
-
-    public Ferramenta(int id, String nome, String marca, double custoAquisicao) {
-        this.id = id;
+    private float custo;
+   
+   
+   
+    public Ferramenta(int id_ferramenta, String nome, String marca, float custo) {
+        this.id_ferramenta = id_ferramenta;
         this.nome = nome;
+        this.custo = custo;
         this.marca = marca;
-        this.custoAquisicao = custoAquisicao;
+   
     }
-
-    // Getters e Setters
-    public int getId() {
-        return id;
+    public int getId_ferramenta() {
+        return id_ferramenta;
     }
-
-    public void setId(int id) {
-        this.id = id;
+    public void setId_ferramenta(int id_ferramenta) {
+        this.id_ferramenta = id_ferramenta;
     }
-
+   
     public String getNome() {
         return nome;
     }
-// alteraçao
     public void setNome(String nome) {
         this.nome = nome;
     }
-
-    public String getMarca() {
+    public String getMarca(){
         return marca;
     }
-
-    public void setMarca(String marca) {
+    public void setMarca(String marca){
         this.marca = marca;
     }
-
-    public double getCustoAquisicao() {
-        return custoAquisicao;
+    public float getCusto() {
+        return custo;
     }
-
-    public void setCustoAquisicao(double custoAquisicao) {
-        this.custoAquisicao = custoAquisicao;
+    public void setCusto(float custo) {
+        this.custo = custo;
     }
-
     @Override
     public String toString() {
-        return "Ferramenta [id=" + id + ", nome=" + nome + ", marca=" + marca + ", custoAquisicao=" + custoAquisicao + "]";
+        return "Ferramenta [id=" + id_ferramenta + ", nome=" + nome + ", marca="+ marca + ", custo" + custo + "]";
     }
-
-    public float getCusto() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+   
+        public ArrayList<Ferramenta> getMinhaLista() {
+            return FerramentaDao.getMinhaLista();
+    }
+        public boolean insertFerramentaBD(String nome,String marca, float custo){
+            int id_ferramenta = this.maiorID() + 1;
+            Ferramenta objeto = new Ferramenta(id_ferramenta, nome, marca, custo);
+            FerramentaDao.minhaLista.add(objeto);
+            return true;
+}
+            public boolean deleteFerramentaBD(int id_ferramenta) {
+                int indice = this.procuraIndice(id_ferramenta);
+                FerramentaDao.minhaLista.remove(indice);
+                return true;
+    }
+    public boolean updateFerramentaBD (int id_ferramenta, String nome, String marca, float custo) {
+        Ferramenta objeto = new Ferramenta(id_ferramenta, nome, marca, custo);
+        int indice = this.procuraIndice(id_ferramenta);
+        FerramentaDao.minhaLista.set(indice, objeto);
+        return true;
+    }
+    private int procuraIndice(int id_ferramenta) {
+        int indice = -1;
+        for (int i = 0; i < FerramentaDao.minhaLista.size(); i++) {
+            if (FerramentaDao.minhaLista.get(i).getId_ferramenta() == id_ferramenta) {
+                indice = i;
+}
+}
+        return indice;
+    }
+   
+ public Ferramenta carregaFerramenta(int id_ferramenta) {
+        int indice = this.procuraIndice(id_ferramenta);
+        return FerramentaDao.minhaLista.get(indice);
+ }
+public int maiorID() {
+        return FerramentaDao.maiorID();
     }
 }
-
-//teste
-//teste 3
