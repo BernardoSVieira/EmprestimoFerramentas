@@ -80,6 +80,11 @@ public class FRMGerenciamentoFerramenta extends javax.swing.JFrame {
         jBConfirmar.setText("Confirmar");
 
         jBVoltar.setText("Voltar");
+        jBVoltar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBVoltarActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -161,6 +166,11 @@ public class FRMGerenciamentoFerramenta extends javax.swing.JFrame {
     private void jRBDisponívelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRBDisponívelActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jRBDisponívelActionPerformed
+
+    private void jBVoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBVoltarActionPerformed
+        // TODO add your handling code here:
+        this.dispose();
+    }//GEN-LAST:event_jBVoltarActionPerformed
 
     /**
      * @param args the command line arguments

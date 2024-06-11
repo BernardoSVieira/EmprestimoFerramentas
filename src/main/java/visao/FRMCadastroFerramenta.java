@@ -54,6 +54,11 @@ public class FRMCadastroFerramenta extends javax.swing.JFrame {
         });
 
         jBVoltar.setText("Voltar");
+        jBVoltar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBVoltarActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -115,6 +120,11 @@ public class FRMCadastroFerramenta extends javax.swing.JFrame {
          FRMGerenciamentoFerramenta gerenciamentoFerramenta = new FRMGerenciamentoFerramenta ();
     gerenciamentoFerramenta.setVisible(true);
     }//GEN-LAST:event_jBGerenciamentoActionPerformed
+
+    private void jBVoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBVoltarActionPerformed
+        // TODO add your handling code here:
+        this.dispose();
+    }//GEN-LAST:event_jBVoltarActionPerformed
 
     /**
      * @param args the command line arguments

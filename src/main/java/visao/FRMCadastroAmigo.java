@@ -32,6 +32,11 @@ public class FRMCadastroAmigo extends javax.swing.JFrame {
         setTitle("Cadastro de Amigos");
 
         jBCadastrar.setText("Cadastrar");
+        jBCadastrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBCadastrarActionPerformed(evt);
+            }
+        });
 
         jBGerenciamento.setText("Gerenciamento de Amigos");
         jBGerenciamento.addActionListener(new java.awt.event.ActionListener() {
@@ -135,8 +140,16 @@ public class FRMCadastroAmigo extends javax.swing.JFrame {
     }//GEN-LAST:event_jTFIdActionPerformed
 
     private void jBVoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBVoltarActionPerformed
-        // TODO add your handling code here:             
+        // TODO add your handling code here:   
+        this.dispose();
     }//GEN-LAST:event_jBVoltarActionPerformed
+
+    private void jBCadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBCadastrarActionPerformed
+        // TODO add your handling code here:
+        String nome = jTFNome.getText();
+        String telefone = jTFTelefone.getText();
+        JOptionPane.showMessageDialog(this, "Nome: " + nome + "\nTelefone: " + telefone, "Dados Cadastrados");
+    }//GEN-LAST:event_jBCadastrarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -184,4 +197,14 @@ public class FRMCadastroAmigo extends javax.swing.JFrame {
     private javax.swing.JTextField jTFNome;
     private javax.swing.JTextField jTFTelefone;
     // End of variables declaration//GEN-END:variables
+
+    private static class JOptionPane {
+
+        private static void showMessageDialog(FRMCadastroAmigo aThis, String string, String dados_Cadastrados) {
+            throw new UnsupportedOperationException("Not supported yet."); 
+        }
+
+        public JOptionPane() {
+        }
+    }
 }
