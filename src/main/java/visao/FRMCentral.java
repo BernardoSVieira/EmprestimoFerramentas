@@ -19,6 +19,7 @@ public class FRMCentral extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
+        jBFechar = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMICadastroFerramenta = new javax.swing.JMenuItem();
@@ -39,6 +40,13 @@ public class FRMCentral extends javax.swing.JFrame {
         jLabel1.setText("Bem Vindo!");
         jLabel1.setMaximumSize(new java.awt.Dimension(100, 16));
         jLabel1.setPreferredSize(new java.awt.Dimension(100, 16));
+
+        jBFechar.setText("Fechar");
+        jBFechar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBFecharActionPerformed(evt);
+            }
+        });
 
         jMenu1.setText("Opções");
         jMenu1.addActionListener(new java.awt.event.ActionListener() {
@@ -135,13 +143,19 @@ public class FRMCentral extends javax.swing.JFrame {
                 .addGap(76, 76, 76)
                 .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 250, Short.MAX_VALUE)
                 .addGap(74, 74, 74))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jBFechar)
+                .addGap(14, 14, 14))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(94, 94, 94)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(117, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 80, Short.MAX_VALUE)
+                .addComponent(jBFechar)
+                .addGap(14, 14, 14))
         );
 
         pack();
@@ -197,6 +211,11 @@ public class FRMCentral extends javax.swing.JFrame {
     estatisticas.setVisible(true);
     }//GEN-LAST:event_jMIEstatisticasActionPerformed
 
+    private void jBFecharActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBFecharActionPerformed
+        // TODO add your handling code here:
+        System.exit(0);
+    }//GEN-LAST:event_jBFecharActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -234,6 +253,7 @@ public class FRMCentral extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jBFechar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JMenuItem jMICadastroAmigo;
     private javax.swing.JMenuItem jMICadastroFerramenta;
