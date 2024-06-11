@@ -4,14 +4,17 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class ControleEmprestimo{
+// Classe responsável por controlar os empréstimos
+public class ControleEmprestimo {
+    // Lista de empréstimos
     private final List<Emprestimo> emprestimos;
 
+    // Construtor que inicializa a lista de empréstimos
     public ControleEmprestimo() {
         this.emprestimos = new ArrayList<>();
     }
 
-    // Adiciona um novo emprestimo
+    // Método para adicionar um novo empréstimo
     public void adicionarEmprestimo(Emprestimo emprestimo) {
         if (emprestimo != null) {
             emprestimos.add(emprestimo);
@@ -20,7 +23,7 @@ public class ControleEmprestimo{
         }
     }
 
-    // termina um emprestimo pelo ID
+    // Método para encerrar um empréstimo pelo ID
     public void encerrarEmprestimo(int id) {
         for (Emprestimo emprestimo : emprestimos) {
             if (emprestimo.getId() == id) {
@@ -31,7 +34,7 @@ public class ControleEmprestimo{
         throw new IllegalArgumentException("Empréstimo não encontrado");
     }
 
-    // busca emprestimos por amigo
+    // Método para buscar empréstimos por amigo
     public List<Emprestimo> buscarEmprestimosPorAmigo(Amigo amigo) {
         List<Emprestimo> resultados = new ArrayList<>();
         for (Emprestimo emprestimo : emprestimos) {
@@ -42,7 +45,7 @@ public class ControleEmprestimo{
         return resultados;
     }
 
-    // busca emprestimos por ferramenta
+    // Método para buscar empréstimos por ferramenta
     public List<Emprestimo> buscarEmprestimosPorFerramenta(Ferramenta ferramenta) {
         List<Emprestimo> resultados = new ArrayList<>();
         for (Emprestimo emprestimo : emprestimos) {
@@ -51,14 +54,14 @@ public class ControleEmprestimo{
             }
         }
         return resultados;
-        }
+    }
 
-    // mostra todos os emprestimos
+    // Método para listar todos os empréstimos
     public List<Emprestimo> listarTodosEmprestimos() {
         return new ArrayList<>(emprestimos);
     }
 
-    // mostra emprestimos ativos
+    // Método para listar os empréstimos ativos
     public List<Emprestimo> listarEmprestimosAtivos() {
         List<Emprestimo> ativos = new ArrayList<>();
         for (Emprestimo emprestimo : emprestimos) {
@@ -68,4 +71,4 @@ public class ControleEmprestimo{
         }
         return ativos;
     }
-} 
+}
